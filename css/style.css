@@ -1,37 +1,68 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+
+body{
+    background-image: url(../content/fundo.jpg);
+    background-attachment: fixed;
 }
-#cards{
+header{
+    height:85px;
+    background-color: #FFEEEE;
+}
+.container{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    border-width: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
-.center{
-  position: absolute; 
-  left: 0; 
-  right: 0;
-  margin:0 auto 0 auto; 
-  width: 100vh;
-}
-.center img{
-    max-width:600px;
-    height:auto;
-}
-.card-img-top{
-    max-width: 300px;
-    height:200px;
-}
-form{
+.prod{
     display: flex;
-    flex-direction: column;
-    max-width: 250px;
-    margin:0 auto;
+    justify-content: space-between;
+    border-width: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-color:#FFEEEE;
+}
+.clear{
+    padding-bottom:5px;
+    float:top;
+    width: 100%;
+    text-align:center;
+}
+.card-body{
+    background-color: #FFEEEE;
+}
+.btn{
+    background-color:#de9797;
+    text-decoration:none;
+    color:#873333;
+}
+.navbar navbar-expand-lg navbar-light bg-light{
+    background-color:#FFEEEE;
+}
+.navbar-brand{
+    color:#873333;
+    font-family: Josefin Sans;
+    font-size: 70px
+}
+.nav-link{
+    color:#873333;
+    font-family: Josefin Sans;
+    font-size: 35px;
 }
 #submit{
     margin:15px 0;
     padding: 2px 0 2px 0;
     border:1px solid rgb(193, 193, 193);
     border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin:0 auto;
 }

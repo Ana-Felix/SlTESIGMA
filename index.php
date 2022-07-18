@@ -7,7 +7,7 @@ include_once './includes/_banco.php';
 ?>
 <h1>Home</h1>
 <div class="container">
-<h2 id="promo">Promoção</h2>
+<h2 id="promoind">Promoção</h2>
     <div class="row mt-5">
         
     <?php

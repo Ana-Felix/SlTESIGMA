@@ -18,7 +18,7 @@ include_once './includes/_header.php';
   <div class="card-body">
     <h5 class="card-title"><?php echo $value['nome'];?></h5>
     <p class="card-text"><?php echo $value['descricao'];?></p>
-    <a href="produto-detalhe.php?id=<?php echo$key?>&tipo=promocao" class="btn btn-primary">Comprar</a>
+    <a href="produto-detalhe.php?id=<?php echo$key?>&tipo=promocao" class="btn">Comprar</a>
   </div>
 </div>
 <?php
