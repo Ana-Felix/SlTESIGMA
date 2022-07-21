@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Jul-2022 às 16:47
+-- Tempo de geração: 21-Jul-2022 às 17:20
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -66,6 +66,28 @@ CREATE TABLE `produtos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Extraindo dados da tabela `produtos`
+--
+
+INSERT INTO `produtos` (`ProdutoID`, `Nome`, `Descricao`, `imagem`, `Preco`, `categoritaID`, `ativo`) VALUES
+(1, 'purin doggo', 'pompompurin porém doggo', 'dog.jpg', 0, 1, 1),
+(2, 'hello pato', 'pato? galinha?', 'duck.jpg', 0, 1, 1),
+(3, 'kuromi cinza', 'kuromi grisalha', 'gray.jpg', 0, 1, 1),
+(4, 'keroppi', 'keroppizinho', 'keroppi.jpg', 0, 1, 1),
+(5, 'kiki n lala', 'anjinhos', 'kk.jpg', 0, 1, 1),
+(6, 'kuromi', 'kuromi tradicional', 'kurom.jpg', 0, 1, 1),
+(7, 'kiki n lala', 'tradicional', 'll.jpg', 0, 1, 1),
+(8, 'melody', 'tradicional', 'melody.jpg', 0, 1, 1),
+(9, 'melody tapa olho', 'oof', 'meme.jpg', 0, 1, 1),
+(10, 'pom pom purin', 'puri puri', 'pi.jpg', 0, 1, 1),
+(11, 'kuromi moranguita', 'murango', 'stra].jpg', 0, 1, 1),
+(12, 'cinamon roll', 'cinabun', 'strcina.jpg', 0, 1, 1),
+(13, 'purin', 'bem passado', 'pur.jpg', 0, 1, 1),
+(14, 'hello kitty férias', 'império bronze', 'tank.jpg', 0, 1, 1),
+(15, 'pochacco', 'rosinha', 'fuzzy.jpg', 0, 1, 1),
+(16, 'cinamon', 'roll', 'cina.jpg', 0, 1, 1);
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -95,7 +117,7 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -17,4 +17,18 @@ $produtos = array(
 14 => array('nome'=>'pochacco','preco'=>'R$3.000','descricao'=>'rosinha','imagem'=>'fuzzy.jpg'),
 15 => array('nome'=>'cinamon','preco'=>'R$3.000','descricao'=>'roll','imagem'=>'cina.jpg'),
 );
+
+$sql = '';
+
+foreach ($produtos as $i => $value) {
+    $nome = $value['nome'];
+    $preco = $value['preco'];
+    $descricao = $value['descricao'];
+    $imagem = $value['imagem'];
+
+    $sql = "$sql <br> INSERT INTO produtos(Nome, Preco, Descricao, imagem, categoritaID, ativo) VALUE('$nome','$preco', '$descricao', '$imagem', 1, 1);";
+
+
+};
+
 ?>
