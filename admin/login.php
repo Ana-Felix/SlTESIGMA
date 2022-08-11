@@ -1,5 +1,5 @@
 <?php
-include_once '_head.php';
+include_once '_header.php';
 ?>
 <main>
     <h2>Administração dos produtos</h2>
@@ -9,7 +9,7 @@ include_once '_head.php';
         2=>'Você precisa ter um usuário válido para acessar!',
         3=>'Você saiu, volte sempre!'
     );
-    if(isset($_GET['msg'])) || is_numeric($_GET) ){
+    if(isset($_GET['msg']) || is_numeric($_GET) ){
         $cod = $_GET['msg'];
         ?>
     <h3><?php echo $mensagem[$cod];?></h3>

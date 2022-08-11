@@ -16,7 +16,7 @@ $resultado = mysqli_query($conn,$sql);
         <select name="valor">
             <?php
             while ($dado - mysqli_fetch_array($resultado)) {
-                echo '<option value-"'.$dado['CategoriaID'].'">'.$dado['Nome'].</option>;
+                echo '<option value-"'.$dado['CategoriaID'].'">'.$dado['Nome'].'</option>';
             }
             ?>
         </select>
